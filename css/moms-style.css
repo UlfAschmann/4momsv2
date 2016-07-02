@@ -1,0 +1,351 @@
+	/*!
+	* Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+	* Code licensed under the Apache License v2.0.
+	* For details, see http://www.apache.org/licenses/LICENSE-2.0.
+	*/
+
+	body,
+	html {
+		width: 100%;
+		height: 100%;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 15px;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: 'Lobster';
+		color: #62508A;
+	}
+
+	h1 small {
+		color: #977F66;
+	}
+
+	section {
+		padding: 100px 0;
+		background: #fff;
+	}
+
+	.spacer {
+		margin-top: 40px
+	}
+
+	.navbar {
+		background: rgba(255, 255, 255, .7);
+	}
+
+	.top-nav-collapse {
+		background: rgba(255, 255, 255, 1);
+	}
+
+	.navbar ul li a {
+		font-size: 15px;
+		font-weight: 600;
+		text-transform: uppercase;
+		border-bottom: 2px solid transparent;
+	}
+
+	.navbar-default .navbar-nav>.active>a,
+	.navbar-default .navbar-nav>.active>a:focus,
+	.navbar-default .navbar-nav>.active>a:hover {
+		color: #fff;
+		background-color: #62508A;
+		-webkit-transition: all 1000ms ease;
+		transition: all 1000ms ease;
+		border-bottom: 2px solid #62508A;
+	}
+
+	.navbar-default .navbar-nav>.active>.anders,
+	.navbar-default .navbar-nav>.active>.anders:focus,
+	.navbar-default .navbar-nav>.active>.anders:hover {
+		color: #fff;
+		background-color: #977F66;
+		-webkit-transition: all 1000ms ease;
+		transition: all 1000ms ease;
+		border-bottom: 2px solid #977F66;
+	}
+
+	.navbar-default {
+		border-color: transparent;
+	}
+
+	.navbar-default .navbar-nav>li>a:focus,
+	.navbar-default .navbar-nav>li>a:hover {
+		color: #62508A;
+		background-color: transparent;
+		border-bottom: 2px solid #62508A;
+	}
+
+	.navbar-default .navbar-nav>li>.anders:focus,
+	.navbar-default .navbar-nav>li>.anders:hover {
+		color: #977F66;
+		background-color: transparent;
+		border-bottom: 2px solid #977F66;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		color: #000;
+	}
+
+	.navbar-toggle {
+		position: relative;
+		float: right;
+		padding: 9px 10px;
+		margin-top: 8px;
+		margin-right: 15px;
+		margin-bottom: 8px;
+		background-color: transparent;
+		background-image: none;
+		border: 0px solid transparent;
+		border-radius: 0px;
+	}
+
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #271E3D;
+	}
+
+	.navbar-default .navbar-toggle .icon-bar:focus,
+	.navbar-default .navbar-toggle .icon-bar:hover {
+		background-color: #62508A;
+	}
+
+	.navbar-default .navbar-toggle:focus,
+	.navbar-default .navbar-toggle:hover {
+		background-color: transparent;
+	}
+	/*
+	Fade content bs-carousel with hero headers
+	Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+	Image credits: unsplash.com
+	*/
+
+	.fade-carousel .carousel-inner .item {
+		opacity: 0;
+		-webkit-transition-property: opacity;
+		transition-property: opacity;
+	}
+
+	.fade-carousel .carousel-inner .active {
+		opacity: 1;
+	}
+
+	.fade-carousel .carousel-inner .active.left,
+	.fade-carousel .carousel-inner .active.right {
+		left: 0;
+		opacity: 0;
+		z-index: 1;
+	}
+
+	.fade-carousel .carousel-inner .next.left,
+	.fade-carousel .carousel-inner .prev.right {
+		opacity: 1;
+	}
+
+	.fade-carousel .carousel-control {
+		z-index: 2;
+	}
+
+	.fade-carousel {
+		position: relative;
+		height: 100vh;
+	}
+
+	.fade-carousel .carousel-inner .item {
+		height: 100vh;
+	}
+
+	.hero {
+		position: absolute;
+		top: 30vw;
+		left: 50%;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, .75);
+		-webkit-transform: translate3d(-50%, -50%, 0);
+		transform: translate3d(-50%, -50%, 0);
+	}
+
+	.hero h1 {
+		font-size: 3vw;
+		font-family: 'Lato';
+		font-weight: bold;
+		color: #fff;
+		margin: 0;
+		padding: 0;
+	}
+
+	.hero h2 {
+		font-size: 2vw;
+		font-weight: 600;
+		font-family: 'Lato';
+		color: #fff;
+		font-style: italic;
+		margin: 0px
+	}
+
+	.hero a {
+		color: #fff;
+		font-size: 4vw;
+	}
+
+	.hero a:hover {
+		color: #62508A;
+	}
+
+	.fade-carousel .carousel-inner .item .hero {
+		opacity: 0;
+		-webkit-transition: 3s all ease-in-out .5s;
+		transition: 3s all ease-in-out .5s;
+	}
+
+	.fade-carousel .carousel-inner .item.active .hero {
+		opacity: 1;
+		-webkit-transition: 3s all ease-in-out .5s;
+		transition: 3s all ease-in-out .5s;
+	}
+
+	.overlay {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+
+	.video-playing {
+		position: absolute;
+		width: 100%;
+		z-index: -1;
+	}
+	/*       Slides backgrounds     */
+
+	.fade-carousel .slides .slide-1,
+	.fade-carousel .slides .slide-2,
+	.fade-carousel .slides .slide-3 {
+		height: 100vh;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	.fade-carousel .slides .slide-1 {}
+
+	.fade-carousel .slides .slide-2 {}
+
+	.fade-carousel .slides .slide-3 {}
+
+	.mision {
+		border-right: 1px solid #977F66;
+		text-align: justify;
+	}
+
+	.vision {
+		text-align: justify;
+	}
+
+	.historia {
+		background: #977F66;
+		color: #fff;
+		font-size: 20px;
+		line-height: 1.5;
+		text-align: justify
+	}
+
+	.historia h1 {
+		color: #fff;
+	}
+
+	.historia small {
+		color: #62508A;
+	}
+
+	.convencete .icon-box.icon-box-color__null.circled .icon {
+		background: #977F66;
+	}
+
+	.convencete .icon-box.icon-box-color__einz.circled .icon {
+		background: #977F66;
+	}
+
+	.convencete .icon-box.icon-box-color__zwei.circled .icon {
+		background: #977F66;
+	}
+
+	.convencete .icon-box.icon-box-color__drei.circled .icon {
+		background: #977F66;
+	}
+
+	.convencete .icon-box.icon-box-color__vier.circled .icon {
+		background: #977F66;
+	}
+
+	.convencete .icon-box.icon-box-color__fuenf.circled .icon {
+		background: #977F66;
+	}
+
+	.convencete .icon-box.icon-box-color__sechs.circled .icon {
+		background: #977F66;
+	}
+
+	.convencete .icon-box.icon-box-color__sieben.circled .icon {
+		background: #977F66;
+	}
+
+	.convencete .icon-box.icon-box-color__acht.circled .icon {
+		background: #977F66;
+	}
+
+	.convencete .icon-box.icon-box-color__neun.circled .icon {
+		background: #977F66;
+	}
+
+	.convencete .icon-box.icon-box-color__zehn.circled .icon {
+		background: #977F66;
+	}
+
+	.convencete .icon-box {
+		position: relative;
+		margin-bottom: 30px;
+	}
+
+	.convencete .icon-box h3 {
+		margin-top: 0
+	}
+
+	.convencete .icon-box.circled .icon {
+		border-radius: 50%;
+		color: #fff;
+	}
+
+	.convencete .icon-box .icon {
+		float: left;
+		width: 70px;
+		height: 70px;
+		line-height: 70px;
+		margin-right: 25px;
+		text-align: center;
+		position: relative;
+		font-size: 48px;
+		-webkit-transition: 0.3s;
+		transition: 0.3s;
+	}
+
+	.convencete .icon-box .icon-box-body {
+		overflow: hidden;
+		position: relative;
+	}
+
+	@media(min-width: 767px) {
+		.navbar {
+			padding: 20px 0;
+			-webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+			transition: background .5s ease-in-out, padding .5s ease-in-out;
+		}
+		.top-nav-collapse {
+			padding: 0;
+		}
+	}
