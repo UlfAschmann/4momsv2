@@ -73,7 +73,7 @@
 	    border-bottom: 2px solid #977F66;
 	}
 	.navbar-default {
-	    border-color: transparent;
+	    border-bottom: 2px solid #62508A;
 	}
 	.navbar-default .navbar-nav>li>a:focus,
 	.navbar-default .navbar-nav>li>a:hover {
