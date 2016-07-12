@@ -365,7 +365,7 @@ if (function_exists('acf_add_local_field_group')):
             array(
                 'key' => 'field_578319a16397b',
                 'label' => 'Paquetes',
-                'name' => '_copiar',
+                'name' => '',
                 'type' => 'tab',
                 'instructions' => '',
                 'required' => 0,
@@ -539,7 +539,7 @@ if (function_exists('acf_add_local_field_group')):
                 'collapsed' => '',
                 'min' => '',
                 'max' => '',
-                'layout' => 'table',
+                'layout' => 'row',
                 'button_label' => 'Agregar Fila',
                 'sub_fields' => array(
                     array(
@@ -587,6 +587,18 @@ if (function_exists('acf_add_local_field_group')):
                         ),
                         'layout' => 'horizontal',
                         'toggle' => 0,
+                    ),
+                    array(
+                        'key' => 'field_578311231230f754',
+                        'label' => 'Título',
+                        'name' => 'imagen_titulo',
+                        'type' => 'text',
+                    ),
+                    array(
+                        'key' => 'field_57831123eeee',
+                        'label' => 'Mensaje',
+                        'name' => 'imagen_mensaje',
+                        'type' => 'text',
                     ),
                 ),
             ),

@@ -107,47 +107,25 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2>Paquetes<small> en 4moms podrás encontrar;</small></h2>
+                <h2>Paquetes<small> <?php echo get_field('subtitulo_paquetes', 'option'); ?></small></h2>
                 <hr>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <div class="caption">
-                        <h3>Paquete 1
-                        </h3>
-                        <p>12 clases teóricas 1 vez por semana.
-                            <br> Dos clases a la semana de ejercicio para embarazadas.</p>
-                        <a href="#contact" class="btn btn-default page-scroll">¡Lo quiero!</a>
+            <?php $paquetes_items = get_field('items_paquetes', 'option'); ?>
+            <?php foreach ($paquetes_items as $paquete_item): ?>
+                <div class="col-md-4 text-center">
+                    <div class="thumbnail">
+                        <img class="img-responsive" src="<?php echo $paquete_item['imagen_paquete']; ?>" alt="">
+                        <div class="caption">
+                            <h3><?php echo $paquete_item['item_titulo']; ?></h3>
+                            <p><?php echo $paquete_item['item_mensaje']; ?></p>
+                            <a href="#contact" class="btn btn-default page-scroll">¡Lo quiero!</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            <?php endforeach; ?>
 
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <div class="caption">
-                        <h3>Paquete 2
-                        </h3>
-                        <p>Inscríbete a la clase de YOGA PRENATAL por trimestre y llévate gratis una sesión de REIKI.</p>
-                        <a href="#contact" class="btn btn-default page-scroll">¡Lo quiero!</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                    <div class="caption">
-                        <h3>Paquete 3
-                        </h3>
-                        <p>Inscríbete a la clase de YOGA POSTNATAL CON TU BEBE por trimestre y llévate un masaje de relajación.</p>
-                        <a href="#contact" class="btn btn-default page-scroll">¡Lo quiero!</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -156,7 +134,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2>Imágenes<small> lorem ipsum dolor sit amet</small></h2>
+                <h2>Imágenes<small> <?php echo get_field('subtitulo_imagenes', 'option'); ?></small></h2>
                 <hr>
             </div>
         </div>
@@ -168,7 +146,7 @@
         <!-- bootFolio category filter -->
         <ul class="filter">
             <li><a data-cat="all" href="#" class="active">Todas</a></li>
-            <li><a data-cat="inst" href="#">Instalaciones</a></li>
+            <li><a data-cat="instalaciones" href="#">Instalaciones</a></li>
             <li><a data-cat="clases" href="#">clases</a></li>
         </ul>
         <!-- bootFolio category filter -->
@@ -176,100 +154,29 @@
         <!-- bootFolio Items -->
         <ul class="items">
             <!-- single item -->
-            <li class="clases">
-                <div class="bf-single-item">
-                    <img src="bfimages/1.jpg" alt="bla bla bla">
-                    <div class="caption">
-                        <div class="cap-in">
-                            <h3>FOCii Website</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur </p>
-                            <div class="bf-lupa">
-                                <a href="bfimages/large/1.jpg" rel="prettyPhoto"><i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
+            <?php $imagenes_items = get_field('item_imagenes', 'options'); ?>
+            <?php foreach ($imagenes_items as $imagenes_item): ?>
+                <?php
+                $cadena_tipos = "";
+                foreach ($imagenes_item['imagen_tipo'] as $tipo) {
+                    $cadena_tipos .= " " . $tipo;
+                }
+                ?>
+                <li class="<?php echo $cadena_tipos; ?>">
+                    <div class="bf-single-item">
+                        <img src="<?php echo $imagenes_item['imagen_galeria']; ?>" alt="">
+                        <div class="caption">
+                            <div class="cap-in">
+                                <h3><?php echo $imagenes_item['imagen_titulo']; ?></h3>
+                                <p><?php echo $imagenes_item['imagen_mensaje']; ?></p>
+                                <div class="bf-lupa">
+                                    <a href="<?php echo $imagenes_item['imagen_galeria']; ?>" rel="prettyPhoto"><i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </li>
-
-            <!-- single item -->
-            <li class="clases inst">
-                <div class="bf-single-item">
-                    <img src="bfimages/1.jpg" alt="bla bla bla">
-                    <div class="caption">
-                        <div class="cap-in">
-                            <h3>FOCii Website</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur </p>
-                            <div class="bf-lupa">
-                                <a href="bfimages/large/1.jpg" rel="prettyPhoto"><i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <!-- single item -->
-            <li class="inst">
-                <div class="bf-single-item">
-                    <img src="bfimages/1.jpg" alt="bla bla bla">
-                    <div class="caption">
-                        <div class="cap-in">
-                            <h3>FOCii Website</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur </p>
-                            <div class="bf-lupa">
-                                <a href="bfimages/large/1.jpg" rel="prettyPhoto"><i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <!-- single item -->
-            <li class="clases">
-                <div class="bf-single-item">
-                    <img src="bfimages/1.jpg" alt="bla bla bla">
-                    <div class="caption">
-                        <div class="cap-in">
-                            <h3>FOCii Website</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur </p>
-                            <div class="bf-lupa">
-                                <a href="bfimages/large/1.jpg" rel="prettyPhoto"><i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <!-- single item -->
-            <li class="inst">
-                <div class="bf-single-item">
-                    <img src="bfimages/1.jpg" alt="bla bla bla">
-                    <div class="caption">
-                        <div class="cap-in">
-                            <h3>FOCii Website</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur </p>
-                            <div class="bf-lupa">
-                                <a href="bfimages/large/1.jpg" rel="prettyPhoto"><i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <!-- single item -->
-            <li class="inst">
-                <div class="bf-single-item">
-                    <img src="bfimages/1.jpg" alt="bla bla bla">
-                    <div class="caption">
-                        <div class="cap-in">
-                            <h3>FOCii Website</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur </p>
-                            <div class="bf-lupa">
-                                <a href="bfimages/large/1.jpg" rel="prettyPhoto"><i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
+                </li>
+            <?php endforeach; ?>
 
         </ul>
         <!-- // bootFolio Items -->
@@ -282,7 +189,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2>Contácto<small> lorem ipsum dolor sit amet</small></h2>
+                <h2>Contácto<small> <?php echo get_field('subtitulo_contactanos','options'); ?></small></h2>
                 <hr>
             </div>
         </div>
@@ -300,34 +207,31 @@
                             <li>
                                 <i class="fa fa-map-marker"></i>
                                 <div class="info-item">
-                                    4moms Co., Old Town Avenue, New York, USA 23000
+                                    <?php echo get_field('direccion','options'); ?>
                                 </div>
                             </li>
                             <li>
                                 <i class="fa fa-phone"></i>
                                 <div class="info-item">
-                                    +1700 124-5678
-                                    <br> +1700 124-5678
+                                    <?php echo get_field('telefono','options'); ?>
                                 </div>
                             </li>
                             <li>
                                 <i class="fa fa-envelope"></i>
                                 <span class="info-item">
-                                    <a href="mailto:info@4moms.com">info@4moms.com</a>
+                                    <a href="mailto:<?php echo get_field('email','options'); ?>"><?php echo get_field('email','options'); ?></a>
                                 </span>
                             </li>
                             <li>
                                 <i class="fa fa-skype"></i>
                                 <div class="info-item">
-                                    <a href="#">4moms</a>
-                                    <br>
-                                    <a href="#">4 moms</a>
+                                    <a href="skype:<?php echo get_field('skype','options'); ?>?call"><?php echo get_field('skype','options'); ?></a>
                                 </div>
                             </li>
                             <li>
                                 <i class="fa fa-clock-o"></i>
                                 <div class="info-item">
-                                    Monday - Friday 9:00 - 21:00
+                                   <?php echo get_field('horario','options'); ?>
                                 </div>
                             </li>
                         </ul>
@@ -336,6 +240,9 @@
                 <!-- /Widget :: Contacts Info -->
             </div>
             <div class="col-md-8">
+                
+                <?php //echo do_shortcode('[contact-form-7 id="11" title="Contact form 1"]'); ?>
+                
                 <h2>Formulario</h2>
                 <form action="php/contact-form.php" id="contact-form" novalidate="novalidate">
 

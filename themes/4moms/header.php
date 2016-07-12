@@ -50,7 +50,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">4MOMS</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="<?php echo get_template_directory_uri(); ?>/bfimages/4moms.png"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
