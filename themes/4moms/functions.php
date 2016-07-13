@@ -765,3 +765,11 @@ if (function_exists('acf_add_local_field_group')):
     ));
 
 endif;
+
+
+
+if (function_exists('add_theme_support')) {
+    add_theme_support('post-thumbnails');
+}
+
+    
