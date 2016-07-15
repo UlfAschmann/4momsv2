@@ -11,6 +11,11 @@
 
 	<title>4MOMS - Home</title>
 
+	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/fav.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/fav.ico" type="image/x-icon" />
+
+
+
 	<link href="<?php echo get_template_directory_uri(); ?>/css/bootFolio.css" rel="stylesheet">
 	<link href="<?php echo get_template_directory_uri(); ?>/css/prettyPhoto.css" rel="stylesheet">
 

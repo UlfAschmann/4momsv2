@@ -234,20 +234,20 @@
 									<a href="mailto:<?php echo get_field('email','options'); ?>"><?php echo get_field('email','options'); ?></a>
 								</span>
 								</li>
-								<li>
-									<i class="fa fa-skype"></i>
-									<div class="info-item">
-										<a href="skype:<?php echo get_field('skype','options'); ?>?call">
-											<?php echo get_field('skype','options'); ?>
-										</a>
-									</div>
-								</li>
-								<li>
-									<i class="fa fa-clock-o"></i>
-									<div class="info-item">
-										<?php echo get_field('horario','options'); ?>
-									</div>
-								</li>
+								<!--<li>
+	<i class="fa fa-skype"></i>
+	<div class="info-item">
+		<a href="skype:<?php echo get_field('skype','options'); ?>?call">
+			<?php echo get_field('skype','options'); ?>
+		</a>
+	</div>
+</li>
+<li>
+	<i class="fa fa-clock-o"></i>
+	<div class="info-item">
+		<?php echo get_field('horario','options'); ?>
+	</div>
+</li>-->
 							</ul>
 						</div>
 					</div>

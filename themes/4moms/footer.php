@@ -1,10 +1,10 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-6">
 				<span class="copyright">Copyright © 4MOMS 2016 by unusual-projects.com.mx</span>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-6">
 				<ul class="list-inline social-buttons">
 					<!--<li><a href="#"><i class="fa fa-twitter"></i></a>
 						</li>-->
@@ -14,14 +14,14 @@
 						</li>-->
 				</ul>
 			</div>
-			<div class="col-md-4">
-				<!--<ul class="list-inline quicklinks">
+			<!--<div class="col-md-4">
+				<ul class="list-inline quicklinks">
 	<li><a href="#">Privacy Policy</a>
 	</li>
 	<li><a href="#">Terms of Use</a>
 	</li>
-</ul>-->
-			</div>
+</ul>
+			</div>-->
 		</div>
 	</div>
 </footer>
