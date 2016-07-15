@@ -18,7 +18,17 @@ $(function () {
 	});
 });
 
-window.addEventListener('load', function () {
+$(document).ready(function () {
+
+	$('.carousel').carousel({
+		interval: 7000
+	});
+
+
+});
+
+
+/*window.addEventListener('load', function () {
 	var video = document.querySelector('#pretzel-video');
 
 	function checkLoad() {
@@ -32,4 +42,4 @@ window.addEventListener('load', function () {
 	}
 
 	checkLoad();
-}, false);
+}, false);*/
